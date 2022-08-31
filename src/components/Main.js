@@ -5,16 +5,21 @@ import FilterPanel from "./FilterPanel";
 import CoffeeList from "./CoffeeList";
 
 class Main extends Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
+    const {data, onUpdateSearchRequest} = this.props;
     return (
       <div className="container">
-        <Info/>
+        <Info />
         <div className="divider_type_line"></div>
         <div className="panels">
-          <SearchPanel />
+          <SearchPanel onUpdateSearchRequest={onUpdateSearchRequest} />
           <FilterPanel />
         </div>
-        <CoffeeList />
+        <CoffeeList data={data}/>
       </div>
     );
   }

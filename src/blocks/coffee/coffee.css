@@ -5,7 +5,7 @@
   flex-wrap: wrap;
   row-gap: 60px;
   column-gap: 70px;
-  margin: 60px auto 0;
+  margin: 60px auto 30px;
   padding: 0;
   max-width: 800px;
   list-style: none;

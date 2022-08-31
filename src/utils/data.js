@@ -2,14 +2,14 @@ import image from '../images/coffee-card.png';
 
 export const coffee = [
   {
-    name: 'AROMISTICO Coffee',
+    name: 'MISTICO',
     image: image,
     weight: '1 kg',
     country: 'Brazil',
     price: 6.99,
   },
   {
-    name: 'AROMISTICO Coffee',
+    name: 'ARO',
     image: image,
     weight: '1 kg',
     country: 'Brazil',
@@ -23,21 +23,21 @@ export const coffee = [
     price: 6.99,
   },
   {
-    name: 'AROMISTICO Coffee',
+    name: 'Fee',
     image: image,
     weight: '1 kg',
     country: 'Columbia',
     price: 6.99,
   },
   {
-    name: 'AROMISTICO Coffee',
+    name: 'TICO',
     image: image,
     weight: '1 kg',
     country: 'Brazil',
     price: 6.99,
   },
   {
-    name: 'AROMISTICO Coffee',
+    name: 'STICoffee',
     image: image,
     weight: '1 kg',
     country: 'Kenya',

@@ -1,6 +1,5 @@
-.header__menu {
+.menu {
   display: flex;
   gap: 40px;
-  margin-left: 10%;
   padding: 0;
 }

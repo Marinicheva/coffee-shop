@@ -1,0 +1,7 @@
+.header {
+  padding-top: 30px;
+  height: 260px;
+  background-image: url('../../images/header-bg.jpg');
+  background-position: 50% 42%;
+  box-sizing: border-box;
+}

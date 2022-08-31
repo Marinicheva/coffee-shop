@@ -1,0 +1,7 @@
+.info__text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 346px;
+  color: #000;
+}

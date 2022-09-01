@@ -13,6 +13,7 @@ class App extends Component {
     this.state = {
       data: coffee,
       term: '',
+      filter: ''
     }
   }
 
@@ -24,13 +25,25 @@ class App extends Component {
     return data.filter(item => item.name.toLowerCase().indexOf(term) > - 1);
   }
 
+  onFilterItem = (data) => {
+    if (!this.state.filter) {
+      return data;
+    }
+
+    return data.filter(item => item.country === this.state.filter);
+  }
+
   onUpdateSearchRequest = (term) => {
     this.setState({term});
   }
 
+  onChangeFilter = (filter) => {
+    this.setState({filter});
+  }
+
   render() {
     const {data, term} = this.state;
-    const visibleData = this.onSearchItem(data, term);
+    const visibleData = this.onFilterItem(this.onSearchItem(data, term));
 
 
     return (
@@ -39,6 +52,7 @@ class App extends Component {
         <Main 
           data={visibleData}
           onUpdateSearchRequest={this.onUpdateSearchRequest}
+          onChangeFilter={this.onChangeFilter}
         />
         <Footer/>
       </div>

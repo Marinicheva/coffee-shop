@@ -5,9 +5,6 @@ import FilterPanel from "./FilterPanel";
 import CoffeeList from "./CoffeeList";
 
 class Main extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     const {data, onUpdateSearchRequest} = this.props;

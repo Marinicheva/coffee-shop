@@ -3,9 +3,6 @@ import nextId from "react-id-generator";
 import CoffeeCard from './CoffeeCard';
 
 class CoffeeList extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     return (
